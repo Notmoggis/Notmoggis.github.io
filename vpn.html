@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PROYECTO FINAL </title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var tiposRedesButton = document.getElementById('tipos-redes');
+            var listaTipos = document.getElementById('lista-tipos');
+    
+            tiposRedesButton.addEventListener('click', function(event) {
+                
+                if (event.target.tagName === 'A' && event.target.parentElement !== tiposRedesButton) {
+                    return;
+                }
+    
+
+                event.preventDefault();
+    
+
+                if (listaTipos.style.display === 'none' || listaTipos.style.display === '') {
+                    listaTipos.style.display = 'block';
+                } else {
+                    listaTipos.style.display = 'none';
+                }
+            });
+        });
+    </script>
+    
+</head>
+<body>
+        <header>
+            <nav class="fixed-nav">
+                <div class="nav-bar">
+
+                    <h1 class="nav-title">VPN </h1>
+
+                    <div class="nav-bar-item"><a href="index.html">Inicio</a></div>
+                    <div class="nav-bar-item"><a href="definicion.html">Definición</a></div>
+                    <div class="nav-bar-item" id="tipos-redes">
+                        <a href="tipos.html">Tipos de Redes</a>
+                        <ul id="lista-tipos" style="display: none;">
+                            <li><a href="tipos.html"> Tipos de redes </a></li>
+                            <li><a href="lan.html">Redes de Área Local (LAN)</a></li>
+                            <li><a href="wan.html">Redes de Área Amplia (WAN)</a></li>
+                            <li><a href="man.html">Redes de Área Metropolitana (MAN)</a></li>
+                            <li><a href="wlan.html">Wireless Local Area Network (WLAN)</a></li>
+                            <li><a href="vpn.html">Redes Virtuales (VPN)</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-bar-item"><a href="seguridad.html">Seguridad</a></div>
+                    <div class="nav-bar-item"><a href="tecnologia.html">Tecnología</a></div>
+                    <div class="nav-bar-item"><a href="form.html">Formulario</a></div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="main-content-lan">
+
+            <div class="separate-tipes">
+
+
+    
+            
+            <div class="video-lan">
+                <video class="video-content-lan" controls autoplay muted>
+                    <source src="v4.mp4" type="video/mp4">
+                    Tu navegador no soporta el formato de video.
+                </video>
+            </div>
+
+            <p class="description-lan">Una VPN (Virtual Private Network) es una tecnología que permite crear una conexión segura y cifrada sobre una red pública como Internet. Las VPNs son utilizadas por empresas y usuarios para proteger sus datos cuando se accede a información sensible de manera remota o en lugares con redes inseguras.</p>
+    
+           
+        
+            <div class="advantage-card-lan">
+                <div class="card-lan">
+                    <h4> Esencial </h4>
+                    <p>Esencial para trabajadores remotos y usuarios que necesitan acceder a redes privadas de forma segura.</p>
+                </div>
+                <div class="card-lan">
+                    <h4>Privacidad</h4>
+                    <p>Crea una "túnel" seguro sobre una red pública (como Internet) para transmitir datos de manera privada.</p>
+                </div>
+                <div class="card-lan">
+                    <h4>Seguridad</h4>
+                    <p>Facilita la navegación en redes públicas (como Wi-Fi en aeropuertos) sin comprometer la seguridad.</p>
+                </div>
+            </div>
+        </div>
+        </section>
+    
+
+</body>
+</html>

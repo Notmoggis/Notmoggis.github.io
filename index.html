@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PROYECTO FINAL </title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var tiposRedesButton = document.getElementById('tipos-redes');
+            var listaTipos = document.getElementById('lista-tipos');
+    
+            tiposRedesButton.addEventListener('click', function(event) {
+                
+                if (event.target.tagName === 'A' && event.target.parentElement !== tiposRedesButton) {
+                    return;
+                }
+    
+
+                event.preventDefault();
+    
+
+                if (listaTipos.style.display === 'none' || listaTipos.style.display === '') {
+                    listaTipos.style.display = 'block';
+                } else {
+                    listaTipos.style.display = 'none';
+                }
+            });
+        });
+    </script>
+    
+</head>
+<body>
+        <header>
+
+            
+            <nav class="fixed-nav">
+                <div class="nav-bar" id="nav-bar-index">
+                    <div class="nav-bar-item"><a href="index.html">Inicio</a></div>
+                    <div class="nav-bar-item"><a href="definicion.html">Definición</a></div>
+                    <div class="nav-bar-item" id="tipos-redes">
+                        <a href="tipos.html">Tipos de Redes</a>
+                        <ul id="lista-tipos" style="display: none;">
+                            <li><a href="tipos.html"> Tipos de redes </a></li>
+                            <li><a href="lan.html">Redes de Área Local (LAN)</a></li>
+                            <li><a href="wan.html">Redes de Área Amplia (WAN)</a></li>
+                            <li><a href="man.html">Redes de Área Metropolitana (MAN)</a></li>
+                            <li><a href="wlan.html">Wireless Local Area Network (WLAN)</a></li>
+                            <li><a href="vpn.html">Redes Virtuales (VPN)</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-bar-item"><a href="seguridad.html">Seguridad</a></div>
+                    <div class="nav-bar-item"><a href="tecnologia.html">Tecnología</a></div>
+                    <div class="nav-bar-item"><a href="form.html">Formulario</a></div>
+                </div>
+            </nav>
+
+
+
+                <div class="img-header">
+                    <div class="overlay"></div>
+                    <img src="3.jpg" alt="Redes de Internet" class="header-img">
+                    <h1 class="title">REDES DE INTERNET</h1>
+                </div>
+                
+        </header>
+
+
+</body>
+</html>

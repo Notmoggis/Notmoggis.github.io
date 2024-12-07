@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PROYECTO FINAL </title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var tiposRedesButton = document.getElementById('tipos-redes');
+            var listaTipos = document.getElementById('lista-tipos');
+    
+            tiposRedesButton.addEventListener('click', function(event) {
+                
+                if (event.target.tagName === 'A' && event.target.parentElement !== tiposRedesButton) {
+                    return;
+                }
+    
+
+                event.preventDefault();
+    
+
+                if (listaTipos.style.display === 'none' || listaTipos.style.display === '') {
+                    listaTipos.style.display = 'block';
+                } else {
+                    listaTipos.style.display = 'none';
+                }
+            });
+        });
+    </script>
+    
+</head>
+<body>
+        <header>
+            <nav class="fixed-nav">
+                <div class="nav-bar">
+
+                    <h1 class="nav-title"> Tecnología </h1>
+
+                    <div class="nav-bar-item"><a href="index.html">Inicio</a></div>
+                    <div class="nav-bar-item"><a href="definicion.html">Definición</a></div>
+                    <div class="nav-bar-item" id="tipos-redes">
+                        <a href="tipos.html">Tipos de Redes</a>
+                        <ul id="lista-tipos" style="display: none;">
+                            <li><a href="tipos.html"> Tipos de redes </a></li>
+                            <li><a href="lan.html">Redes de Área Local (LAN)</a></li>
+                            <li><a href="wan.html">Redes de Área Amplia (WAN)</a></li>
+                            <li><a href="man.html">Redes de Área Metropolitana (MAN)</a></li>
+                            <li><a href="wlan.html">Wireless Local Area Network (WLAN)</a></li>
+                            <li><a href="vpn.html">Redes Virtuales (VPN)</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-bar-item"><a href="seguridad.html">Seguridad</a></div>
+                    <div class="nav-bar-item"><a href="tecnologia.html">Tecnología</a></div>
+                    <div class="nav-bar-item"><a href="form.html">Formulario</a></div>
+                </div>
+            </nav>
+            </header>
+    
+
+
+            <main>
+                    
+                <section id="tecnologia">
+
+
+
+                        <div class="container-main">
+
+
+                            <div class="overlay-right">
+                            <div class="overlay-1"> </div>
+                            <img src="fnd.jpeg" alt="Fondo" class="background-img">
+                            </div>
+                            
+
+
+
+                
+
+                            <div class="container-tec-initial">
+        
+                                    <div class="container-tec-initial-img">
+                                        <div class="container-tec-initial-img-radius">
+                                                    <img src="tec.jpeg" alt="Mundo digital">
+                                        </div>
+                                    </div>
+                                
+        
+                                    <div class="container-tec-initial-p">
+        
+                                                <div class="container-tec-initial-p-secondary">
+                                                    <p class="container-tec-initial-p-secondary-p">Las tecnologías de redes incluyen hardware como routers, switches, y cables, así como software para la gestión y monitoreo de la red. Las redes modernas también utilizan tecnologías inalámbricas y de fibra óptica para mejorar la velocidad y la eficiencia.</p>
+                                                </div>
+        
+                                    </div>
+        
+                            </div>
+                                    
+
+        
+                            </div>
+
+
+                            <div class="advantage-card-normal">
+                                <div class="card-normal">
+                                    <h4> Hardware </h4>
+                                    <p>Es una infraestructura hardware que permite transmitir información entre diferentes puntos físicos.</p>
+                                </div>
+                                <div class="card-normal">
+                                    <h4> ¿Sabías que? </h4>
+                                    <p>La tecnología de redes se remonta a cuando en 1981 IBM sacó el primer modelo de ordenador personal. Pronto, esos ordenadores se conectaron a través de cables (teniendo que hacerse uno a uno), creando las primeras redes. En 1985 el tamaño y complejidad de las redes era tan grande que eran los departamentos de informática los que se tenían que hacer cargo de ellas.</p>
+                                </div>
+                                <div class="card-normal">
+                                    <h4>Novedades </h4>
+                                    <p> Las nuevas tecnologias están a la orden del dia, y todas ellas pintan su horizonte sobre la tecnologia de redes, la cual permite construir     correctamente el futuro</p>
+                                </div>
+                            </div>
+
+
+                </section>
+        
+            </main>
+
+</body>
+</html>

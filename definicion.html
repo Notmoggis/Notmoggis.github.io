@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PROYECTO FINAL </title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var tiposRedesButton = document.getElementById('tipos-redes');
+            var listaTipos = document.getElementById('lista-tipos');
+    
+            tiposRedesButton.addEventListener('click', function(event) {
+                
+                if (event.target.tagName === 'A' && event.target.parentElement !== tiposRedesButton) {
+                    return;
+                }
+    
+
+                event.preventDefault();
+    
+
+                if (listaTipos.style.display === 'none' || listaTipos.style.display === '') {
+                    listaTipos.style.display = 'block';
+                } else {
+                    listaTipos.style.display = 'none';
+                }
+            });
+        });
+    </script>
+    
+</head>
+<body id="definicion-body">
+        <header>
+            <nav class="fixed-nav">
+                <div class="nav-bar">
+
+                    <h1 class="nav-title"> Definición </h1>
+
+
+                    <div class="nav-bar-item"><a href="index.html">Inicio</a></div>
+                    <div class="nav-bar-item"><a href="definicion.html">Definición</a></div>
+                    <div class="nav-bar-item" id="tipos-redes">
+                        <a href="tipos.html">Tipos de Redes</a>
+                        <ul id="lista-tipos" style="display: none;">
+                            <li><a href="tipos.html"> Tipos de redes </a></li>
+                            <li><a href="lan.html">Redes de Área Local (LAN)</a></li>
+                            <li><a href="wan.html">Redes de Área Amplia (WAN)</a></li>
+                            <li><a href="man.html">Redes de Área Metropolitana (MAN)</a></li>
+                            <li><a href="wlan.html">Wireless Local Area Network (WLAN)</a></li>
+                            <li><a href="vpn.html">Redes Virtuales (VPN)</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-bar-item"><a href="seguridad.html">Seguridad</a></div>
+                    <div class="nav-bar-item"><a href="tecnologia.html">Tecnología</a></div>
+                    <div class="nav-bar-item"><a href="form.html">Formulario</a></div>
+                </div>
+            </nav>
+        </header>
+    
+        <main>
+            <section id="definicion">
+
+                <div class="container-main">
+
+                        <div class="overlay-1"> </div>
+                            <img src="fnd.jpeg" alt="Fondo" class="background-img">
+
+
+
+                
+
+
+
+                    <div class="container-definition-initial">
+
+                            <div class="container-definition-initial-img-radius">
+                                        <img src="cubo.jpeg" alt="Mundo digital">
+                            </div>
+
+
+
+                            <div class="container-definition-initial-p">
+                                        <div class="container-definition-initial-p-secondary">
+                                            <p class="container-definition-initial-p-secondary-p">Una red de internet es un conjunto de equipos informáticos y software conectados entre sí por medio de dispositivos físicos que envían y reciben señales eléctricas, ondas electromagnéticas o cualquier otro medio para el transporte de datos, con el propósito de compartir información, recursos y servicios.</p>
+                                        </div>
+                            </div>
+                            
+                    </div>
+
+
+
+                </div>
+
+
+                <div class="advantage-card-normal">
+                    <div class="card-normal">
+                        <h4> Accesible </h4>
+                        <p>Ofrece información las 24 horas del día, y se puede acceder a ella siempre y cuando la conexión sea posible.</p>
+                    </div>
+                    <div class="card-normal">
+                        <h4> Pública </h4>
+                        <p> Es de carácter público. Ya que permite acceder a cualquier persona que tenga acceso a internet </p>
+                    </div>
+                    <div class="card-normal">
+                        <h4> Libertad de expresión </h4>
+                        <p>No pertenece a ningún ente, es de orden universal y descentralizado, por lo que no hay puntos de control a nivel jerárquico..</p>
+                    </div>
+                </div>
+
+            
+            </section>
+        </main>
+    
+
+
+
+</body>
+</html>

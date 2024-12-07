@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PROYECTO FINAL </title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var tiposRedesButton = document.getElementById('tipos-redes');
+            var listaTipos = document.getElementById('lista-tipos');
+    
+            tiposRedesButton.addEventListener('click', function(event) {
+                
+                if (event.target.tagName === 'A' && event.target.parentElement !== tiposRedesButton) {
+                    return;
+                }
+    
+
+                event.preventDefault();
+    
+
+                if (listaTipos.style.display === 'none' || listaTipos.style.display === '') {
+                    listaTipos.style.display = 'block';
+                } else {
+                    listaTipos.style.display = 'none';
+                }
+            });
+        });
+    </script>
+    
+</head>
+<body>
+
+    
+        <header>
+            <nav class="fixed-nav">
+                <div class="nav-bar">
+
+                    <h1 class="nav-title"> Tipos de redes </h1>
+
+                    <div class="nav-bar-item"><a href="index.html">Inicio</a></div>
+                    <div class="nav-bar-item"><a href="definicion.html">Definición</a></div>
+                    <div class="nav-bar-item" id="tipos-redes">
+                        <a href="tipos.html">Tipos de Redes</a>
+                        <ul id="lista-tipos" style="display: none;">
+                            <li><a href="tipos.html"> Tipos de redes </a></li>
+                            <li><a href="lan.html">Redes de Área Local (LAN)</a></li>
+                            <li><a href="wan.html">Redes de Área Amplia (WAN)</a></li>
+                            <li><a href="man.html">Redes de Área Metropolitana (MAN)</a></li>
+                            <li><a href="wlan.html">Wireless Local Area Network (WLAN)</a></li>
+                            <li><a href="vpn.html">Redes Virtuales (VPN)</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-bar-item"><a href="seguridad.html">Seguridad</a></div>
+                    <div class="nav-bar-item"><a href="tecnologia.html">Tecnología</a></div>
+                    <div class="nav-bar-item"><a href="form.html">Formulario</a></div>
+                </div>
+            </nav>
+            </header>
+
+                <main>
+
+                    <section id="tipos-redes">
+
+                        <div class="container-main">
+
+                            <div class="overlay-1"> </div>
+                                <img src="fnd.jpeg" alt="Fondo" class="background-img">
+    
+    
+    
+                    
+    
+                        <div class="container-definition-initial">
+    
+    
+    
+                        
+                                <div class="container-definition-initial-img-radius">
+                                            <img src="9.jpeg" alt="Mundo digital">
+                                </div>
+    
+                        
+                            
+    
+                                <div class="container-definition-initial-p">
+    
+                                            <div class="container-definition-initial-p-secondary">
+                                                <p class="container-definition-initial-p-secondary-p">En el mundo digital actual, las redes de comunicación juegan un papel crucial en el funcionamiento de Internet y en la interconexión de dispositivos. Estas redes permiten la transmisión de datos, la comunicación remota y el acceso a recursos compartidos, facilitando desde actividades personales hasta procesos empresariales de alta complejidad. A continuación, exploramos los principales tipos de redes que conforman la infraestructura global.</p>
+                                            </div>
+    
+                                </div>
+    
+                        </div>
+                    </div>
+
+                    <div class="advantage-card-normal">
+                        <div class="card-normal">
+                            <h4> Unión </h4>
+                            <p>Una red informática es un conjunto de equipos o dispositivos interconectados que comparten recursos e intercambian información. </p>
+                        </div>
+                        <div class="card-normal">
+                            <h4> Alcance </h4>
+                            <p>Alcance ilimitado, generalmente hasta unos pocos metros.</p>
+                        </div>
+                        <div class="card-normal">
+                            <h4> A tu medida </h4>
+                            <p> Existe un tipo de redes para cada tipo de usuario, lo que amplia su funcionalidad y escalabilidad </p>
+                        </div>
+                    </div>
+
+
+
+            </section>
+        </main>
+
+</body>
+</html>

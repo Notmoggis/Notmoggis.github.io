@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PROYECTO FINAL </title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var tiposRedesButton = document.getElementById('tipos-redes');
+            var listaTipos = document.getElementById('lista-tipos');
+    
+            tiposRedesButton.addEventListener('click', function(event) {
+                
+                if (event.target.tagName === 'A' && event.target.parentElement !== tiposRedesButton) {
+                    return;
+                }
+    
+
+                event.preventDefault();
+    
+
+                if (listaTipos.style.display === 'none' || listaTipos.style.display === '') {
+                    listaTipos.style.display = 'block';
+                } else {
+                    listaTipos.style.display = 'none';
+                }
+            });
+        });
+    </script>
+    
+</head>
+<body>
+        <header>
+            <nav class="fixed-nav">
+                <div class="nav-bar">
+
+                    <h1 class="nav-title"> Seguridad </h1>
+
+
+                    <div class="nav-bar-item"><a href="index.html">Inicio</a></div>
+                    <div class="nav-bar-item"><a href="definicion.html">Definición</a></div>
+                    <div class="nav-bar-item" id="tipos-redes">
+                        <a href="tipos.html">Tipos de Redes</a>
+                        <ul id="lista-tipos" style="display: none;">
+                            <li><a href="tipos.html"> Tipos de redes </a></li>
+                            <li><a href="lan.html">Redes de Área Local (LAN)</a></li>
+                            <li><a href="wan.html">Redes de Área Amplia (WAN)</a></li>
+                            <li><a href="man.html">Redes de Área Metropolitana (MAN)</a></li>
+                            <li><a href="wlan.html">Wireless Local Area Network (WLAN)</a></li>
+                            <li><a href="vpn.html">Redes Virtuales (VPN)</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-bar-item"><a href="seguridad.html">Seguridad</a></div>
+                    <div class="nav-bar-item"><a href="tecnologia.html">Tecnología</a></div>
+                    <div class="nav-bar-item"><a href="form.html">Formulario</a></div>
+                </div>
+            </nav>
+                </header>
+
+        <main>
+    
+            <section id="seguridad">
+
+
+                <div class="container-main">
+
+                    <div class="overlay-1"> </div>
+                    <img src="fnd.jpeg" alt="Fondo" class="background-img-1">
+
+
+
+                
+
+                    <div class="container-security-initial">
+
+                    
+                        
+
+                            <div class="container-security-initial-p">
+
+                                        <div class="container-security-initial-p-secondary">
+                                            <p class="container-security-initial-p-secondary-p">La seguridad en redes de internet incluye técnicas y prácticas para proteger la integridad, confidencialidad y disponibilidad de los datos transmitidos y almacenados en la red. Entre ellas se incluyen firewalls, encriptación, autenticación y protocolos seguros.</p>
+                                        </div>
+
+                            </div>
+
+
+                            
+                            <div class="container-security-initial-img">
+                                <div class="container-security-initial-img-radius">
+                                            <img src="security.jpeg" alt="Mundo digital">
+                                </div>
+                            </div>
+
+                    </div>
+
+
+                    <div class="advantage-card-normal">
+                        <div class="card-normal">
+                            <h4>  Necesaria </h4>
+                            <p> Es necesario mantener una red segura, ya que dentro de la WWW existen multiples datos sensibles que pueden comprometer la integridad de los cibernautas </p>
+                        </div>
+                        <div class="card-normal">
+                            <h4>  Para instalar una red informática  de forma segura se necesitan los siguientes elementos: </h4>
+                            
+                                <p>
+                               
+                                   <ul>
+
+                                <div class="list-footes"><li> <span class="span-lists-1">Hardware</span> Dispositivos y máquinas que permiten el establecimiento de la comunicación, como son tarjetas de red, módems y enrutadores, o antenas repetidoras en caso de ser inalámbricas. </li> </div>
+                                <div class="list-footes"><li><span class="span-lists-1">Software</span> Programas requeridos para administrar el hardware de comunicaciones, como es el Sistema Operativo de Redes (de siglas NOS: Network Operating System), y los protocolos de comunicación como TCP/IP.</li></div>
+                                <div class="list-footes"><li> <span class="span-lists-1">Servidores y clientes</span> Los servidores procesan el flujo de datos de la red, atendiendo a las peticiones de los demás computadores de la red denominados clientes o estaciones de trabajo. Estos permiten a los usuarios el acceso a la información de manera individual, compartiendo los recursos administrados por el servidor.</li>
+                                </div>
+                                <div class="list-footes">
+                                <li> <span class="span-lists-1"> transmisión </span> Esto alude al cableado o a las ondas electromagnéticas que, según sea el caso, sirven de medio a la comunicación del mensaje.  </li></div>
+
+                                    </ul>
+
+                                </p>
+                        </div>
+                        <div class="card-normal">
+                            <h4> Control de acceso </h4>
+                            <p>     Todos hemos utilizado una contraseña para iniciar sesión en un equipo, red o aplicación, a esto lo llamamos control de acceso. Se divide en cuatro partes: identificación, autenticación, autorización y responsabilidad (IAAR).
+
+                                El sistema inicia confirmando la identidad del usuario a través de un identificador único como su ID (abreviatura del inglés «Identification»), nombre de usuario o número de cuenta. Después, autentifica la identidad mediante la verificación de las credenciales del ID y la contraseña para luego concederle la autorización y acceder. Y por último, la responsabilidad, que consta de hacer un seguimiento de la actividad del usuario para que se hagan responsables de sus acciones en un sistema. </p>
+                        </div>
+                    </div>
+            </section>
+        </main>
+</body>
+</html>

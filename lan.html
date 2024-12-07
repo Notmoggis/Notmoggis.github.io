@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PROYECTO FINAL </title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var tiposRedesButton = document.getElementById('tipos-redes');
+            var listaTipos = document.getElementById('lista-tipos');
+    
+            tiposRedesButton.addEventListener('click', function(event) {
+                
+                if (event.target.tagName === 'A' && event.target.parentElement !== tiposRedesButton) {
+                    return;
+                }
+    
+
+                event.preventDefault();
+    
+
+                if (listaTipos.style.display === 'none' || listaTipos.style.display === '') {
+                    listaTipos.style.display = 'block';
+                } else {
+                    listaTipos.style.display = 'none';
+                }
+            });
+        });
+    </script>
+    
+</head>
+<body>
+        <header>
+            <nav class="fixed-nav">
+                <div class="nav-bar">
+
+                    <h1 class="nav-title"> LAN </h1>
+
+                    <div class="nav-bar-item"><a href="index.html">Inicio</a></div>
+                    <div class="nav-bar-item"><a href="definicion.html">Definición</a></div>
+                    <div class="nav-bar-item" id="tipos-redes">
+                        <a href="tipos.html">Tipos de Redes</a>
+                        <ul id="lista-tipos" style="display: none;">
+                            <li><a href="tipos.html"> Tipos de redes </a></li>
+                            <li><a href="lan.html">Redes de Área Local (LAN)</a></li>
+                            <li><a href="wan.html">Redes de Área Amplia (WAN)</a></li>
+                            <li><a href="man.html">Redes de Área Metropolitana (MAN)</a></li>
+                            <li><a href="wlan.html">Wireless Local Area Network (WLAN)</a></li>
+                            <li><a href="vpn.html">Redes Virtuales (VPN)</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-bar-item"><a href="seguridad.html">Seguridad</a></div>
+                    <div class="nav-bar-item"><a href="tecnologia.html">Tecnología</a></div>
+                    <div class="nav-bar-item"><a href="form.html">Formulario</a></div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="main-content-lan">
+
+            <div class="separate-tipes">
+
+
+    
+            
+            <div class="video-lan">
+                <video class="video-content-lan" controls autoplay muted>
+                    <source src="v2.mp4" type="video/mp4">
+                    Tu navegador no soporta el formato de video.
+                </video>
+            </div>
+
+            <p class="description-lan">Una LAN (Local Area Network) es una red que conecta dispositivos dentro de un área geográfica limitada, como una oficina, una escuela o un hogar. Las LANs permiten a los usuarios compartir recursos como archivos, impresoras y acceso a Internet.</p>
+    
+           
+        
+            <div class="advantage-card-lan">
+                <div class="card-lan">
+                    <h4>Compatibilidad:</h4>
+                    <p>Permite compartir recursos como impresoras y almacenamiento de datos.</p>
+                </div>
+                <div class="card-lan">
+                    <h4>Sencillo:</h4>
+                    <p>Configuración sencilla y costos relativamente bajos.</p>
+                </div>
+                <div class="card-lan">
+                    <h4>Control:</h4>
+                    <p>Control centralizado sobre los dispositivos conectados.</p>
+                </div>
+            </div>
+        </div>
+        </section>
+    
+
+</body>
+</html>
